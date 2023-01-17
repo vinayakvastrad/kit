@@ -6,7 +6,7 @@ const output = execSync('pnpm list --recursive --depth Infinity --json', {
 });
 
 const packages = JSON.parse(output);
-
+console.log(output);
 const deps = new Map();
 
 function get_or_default(map, key, constructor) {
